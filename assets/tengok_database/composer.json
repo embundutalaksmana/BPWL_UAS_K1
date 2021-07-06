@@ -1,0 +1,8 @@
+{
+    "name": "embun/utsbpwl",
+    "description": "composer ini khusus untuk proyek UTS BPWL SMT2 nya Embun",
+    "license": "GPL",
+    "require": {
+        "google/apiclient": "^2.9"
+    }
+}
