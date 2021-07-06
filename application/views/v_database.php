@@ -1,37 +1,47 @@
-<main role="main" class="container">
-		<div class="card">
-			<div class="card-header">Data Bantuan BOS Tahun 2020</div>
-			<div class="card-body">
-				<a href="<?php echo base_url(); ?>database/create" class="btn btn-success">Create</a>
-				<br/>
-				<br/>
-				<table class="table table-bordered">
-					<tr>
-						<th width="5%">No</th>
-						<th>NPSN</th>
-						<th>Nama Sekolah</th>
-						<th>Besar Bantuan</th>
-						<th>Action</th>
-					</tr>
-					<?php 
-					$no = 1;
-					foreach($siswa as $row)
-					{
-						?>
-						<tr>
-							<td widtd="5%"><?php echo $no++; ?></td>
-							<td><?php echo $row->NPSN; ?></td>
-							<td><?php echo $row->Nama_Sekolah; ?></td>
-							<td><?php echo $row->Besaran_Bantuan; ?></td>
-							<td>
-							<a href="<?php echo base_url(); ?>database/edit/<?php echo $row->kd_siswa; ?>" class="btn btn-warning">Edit</a>
-							<a href="<?php echo base_url(); ?>database/delete/<?php echo $row->kd_siswa; ?>" class="btn btn-danger">Hapus</a>
-							</td>
-						</tr>
-						<?php
-					}
-					?>
-				</table>
-			</div>
-		</div>
-</main>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>DATA PENERIMA BOS 2020 Kabupaten Siak</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>DATA PENERIMA BOS 2020 Kabupaten Siak</h2>
+        <a href="" class="btn btn-warning">Tambah</a>
+        <table class="table table-dark">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>NPSN</th>
+                    <th>Nama Sekolah</th>
+                    <th>Besar Bantuan</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php
+                $no = 1;
+                foreach ($Database as $u) :
+                    ?>
+                    <tr>
+                        <td><?= $no++; ?></td>
+                        <td><?= $u['NPSN'] ?></td>
+                        <td><?= $u['Nama_Sekolah'] ?></td>
+                        <td><?= $u['Besaran_Bantuan'] ?></td>
+                        <td><a href="" class="btn btn-danger">Hapus</a>
+                            <a href="" class="btn btn-primary">Ubah</a>
+                        </td>
+                    </tr>
+                <?php
+                endforeach;
+                ?>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

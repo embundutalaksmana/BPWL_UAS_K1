@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Saira&display=swap');
+* { 
+ font-family: "Saira", sans-serif; 
+ margin: 0%;
+ padding: 0%;
+ box-sizing: border-box;
+}
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 92px;
+}
+a.menu-detail{
+    color: #b8becd;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 5px;
+}
+a.active{
+    color: #202326;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 5px;
+}
+a.pembuka{
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+}  
+section.pembuka{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;   
+}
+#width{
+    top: 100%;
+}
+.gambar-awal{
+    position: absolute;
+    right: -55px;
+    bottom: -20px;
+    z-index: -999;
+}
+h1{
+    font-family: "Saira", sans-serif;
+    margin: 100;
+}
+h2 {
+    font-family: "Saira", sans-serif;
+    font-style: normal;
+    margin: 100;
+}
+.button-daftar{
+    margin-top: 10px;
+    background-color:#2cbd84;
+    text-align: center;
+    width: 200px;
+    text-decoration: transparent;
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 10px;    
+}
+.button-daftar h4 {
+    letter-spacing: 1.5px;
+    color: white;
+}
+input{
+    color: azure;
+}

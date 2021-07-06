@@ -1,0 +1,32 @@
+section.jurusan {
+    border-radius: 20px 20px;
+    margin-top: 10px;
+    background-color: rgba(0, 154,122, 0.3);
+    padding: 10px;
+    width: 25%;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    left: 500px;
+}
+section.list-jurusan{
+    margin-top: 10px;
+    padding: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    text-align: center;
+}
+.item-jurusan {
+    border-radius: 20px 10px 20px 10px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #2cbd84;
+}
+.gambar-jurusan{
+    margin: 20px;
+}
+.item-jurusan p{
+    justify-content: center;
+    text-align: justify;
+}
