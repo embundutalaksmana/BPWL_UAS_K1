@@ -14,4 +14,8 @@ class Database extends CI_Controller
         $data['Database'] = $this->m_database->getAllDatabase();
         $this->load->view('v_database', $data);
     }
+    function hapus($NPSN){
+        $this->m_database->hapus_data($NPSN);
+        redirect('database');
+    }
 }
