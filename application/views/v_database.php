@@ -33,7 +33,8 @@
                         <td><?= $u['NPSN'] ?></td>
                         <td><?= $u['Nama_Sekolah'] ?></td>
                         <td><?= $u['Besaran_Bantuan'] ?></td>
-                        <td><a href="" class="btn btn-danger">Hapus</a>
+                        <td>
+                            <a href="<?= base_url() ?>database/hapus/<?=$u['NPSN']?>" class="btn btn-danger">Hapus</a>
                             <a href="" class="btn btn-primary">Ubah</a>
                         </td>
                     </tr>
