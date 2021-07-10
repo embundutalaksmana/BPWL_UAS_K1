@@ -12,7 +12,7 @@
 <body>
     <div class="container">
         <h2>DATA PENERIMA BOS 2020 Kabupaten Siak</h2>
-        <a href="<?= base_url() ?>database/formTambah" class="btn btn-primary"> Tambah Data </a>
+        <a href="<?= base_url() ?>database/formTambah" class="btn btn-warning"> Tambah Data </a>
         <table class="table table-dark">
             <thead>
                 <tr>
@@ -35,7 +35,7 @@
                         <td><?= $u['Besaran_Bantuan'] ?></td>
                         <td>
                             <a href="<?= base_url() ?>database/hapus/<?=$u['NPSN']?>" class="btn btn-danger">Hapus</a>
-                            <a href="" class="btn btn-primary">Ubah</a>
+                            <a href="<?= base_url() ?>database/formEdit/<?=$u['NPSN']?>" class="btn btn-primary">Ubah</a>
                         </td>
                     </tr>
                 <?php

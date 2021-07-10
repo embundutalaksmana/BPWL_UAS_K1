@@ -29,4 +29,15 @@ class Database extends CI_Controller
         $this->m_database->hapus_data($NPSN);
         redirect('database');
     }
+
+    public function formEdit($NPSN)
+    {
+        $data['database'] = $this->m_database->getUserByNPSN($NPSN);
+        $this->load->view('database/form_edit', $data);
+    }
+    public function EditData()
+    {
+        $this->m_database->editData();
+        redirect('database');
+    }
 }
