@@ -12,7 +12,7 @@
 <body>
     <div class="container">
         <h2>DATA PENERIMA BOS 2020 Kabupaten Siak</h2>
-        <a href="" class="btn btn-warning">Tambah</a>
+        <a href="<?= base_url() ?>database/formTambah" class="btn btn-primary"> Tambah Data </a>
         <table class="table table-dark">
             <thead>
                 <tr>

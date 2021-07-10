@@ -14,6 +14,17 @@ class Database extends CI_Controller
         $data['Database'] = $this->m_database->getAllDatabase();
         $this->load->view('v_database', $data);
     }
+
+    public function formTambah()
+    {
+        $this->load->view('form_tambah');
+    }
+    public function simpanData()
+    {
+        $this->m_database->inputData();
+        redirect('database');
+    }
+
     function hapus($NPSN){
         $this->m_database->hapus_data($NPSN);
         redirect('database');
