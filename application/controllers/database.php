@@ -32,8 +32,8 @@ class Database extends CI_Controller
 
     public function formEdit($NPSN)
     {
-        $data['database'] = $this->m_database->getUserByNPSN($NPSN);
-        $this->load->view('database/form_edit', $data);
+        $data['Database'] = $this->m_database->getUserByNPSN($NPSN);
+        $this->load->view('form_edit', $data);
     }
     public function EditData()
     {

@@ -13,21 +13,21 @@
     <div class="container">
         <div class="card">
             <div class="card-header">
-                Form Tambah Data
+                Form Edit Data
             </div>
             <div class="card-body">
                 <form action="<?= base_url() ?>database/EditData" method="post">
                     <div class="form-group">
                     <label>NPSN</label>
-                        <input type="text" name="NPSN" class="form-control" value="<?= $NPSN['NPSN'] ?>" id="NPSN" placeholder="Masukkan NPSN">
+                        <input type="text" name="NPSN" class="form-control" value="<?= $Database['NPSN'] ?>" id="NPSN" placeholder="Masukkan NPSN">
                     </div>
                     <div class="form-group">
                         <label>Nama Sekolah</label>
-                        <input type="text" name="Nama_Sekolah" class="form-control" value="<?= $NPSN['Nama_Sekolah'] ?>" id="Nama_Sekolah" placeholder="Masukkan Nama Sekolah">
+                        <input type="text" name="Nama_Sekolah" class="form-control" value="<?= $Database['Nama_Sekolah'] ?>" id="Nama_Sekolah" placeholder="Masukkan Nama Sekolah">
                     </div>
                     <div class="form-group">
                     <label>Besaran Bantuan</label>
-                        <input type="text" name="Besaran_Bantuan" class="form-control" value="<?= $NPSN['Besaran_Bantuan'] ?>" id="Besaran_Bantuan" placeholder="Masukkan Besaran Bantuan">
+                        <input type="text" name="Besaran_Bantuan" class="form-control" value="<?= $Database['Besaran_Bantuan'] ?>" id="Besaran_Bantuan" placeholder="Masukkan Besaran Bantuan">
                     </div>
                     <button type="submit" class="btn btn-primary">Simpan</button>
                 </form>

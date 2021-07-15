@@ -33,6 +33,6 @@ class M_database extends CI_Model
             "Besaran_Bantuan" => $this->input->post('Besaran_Bantuan', true)
         ];
         $this->db->where('NPSN', $this->input->post('NPSN'));
-        $this->db->update('NPSN', $data);
+        $this->db->update('datasiak2020', $data);
     }
 }
